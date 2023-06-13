@@ -17,10 +17,12 @@ class MobilController extends Controller
         ];
         return view('mobil.index', compact('dataMobil'));
     }
+    
     function create()
     {
         return view('mobil.create');
     }
+
     function store(Request $request)
     {
         $dataMobil = [
